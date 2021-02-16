@@ -1,0 +1,6 @@
+<h1 class="my-4 text-center">Amol Shop</h1>
+
+<div class="list-group">
+  <a [routerLink]="[ '/products']" class="list-group-item category-bg-color">VIEW ALL</a>
+  <a [routerLink]="[ 'product', category.id ]" class="list-group-item" *ngFor="let category of allCategories" >{{category.category | uppercase}}</a>
+</div>
